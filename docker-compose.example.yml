@@ -1,7 +1,7 @@
 services:
   frps:
     container_name: frps
-    image: ghcr.io/product-science/frps:latest  
+    image: ghcr.io/jjoinvest/gonka-frps:main
     restart: unless-stopped
     ports:
       - "7200:7200" #exposed externally
@@ -175,8 +175,6 @@ services:
     expose:
       - "127.0.0.1:5173"
     restart: unless-stopped
-    extra_hosts:
-      - "host.docker.internal:host-gateway"
 
   
 
