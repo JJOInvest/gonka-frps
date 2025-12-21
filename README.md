@@ -1,6 +1,8 @@
 # Gonka FRP Server Docker Image
 
-This Docker image provides an **FRP (Fast Reverse Proxy) server** that is intended to work with gonka to protect connections from network nodes to MLNodes.
+This Docker image provides an **FRP (Fast Reverse Proxy) server** that is intended to work with [gonka](https://github.com/gonka-ai) to protect connections from network nodes to MLNodes.
+
+This image is built on top of [FRP](https://github.com/fatedier/frp), a fast reverse proxy that helps expose a local server behind a NAT or firewall to the internet.
 
 ## Overview
 
@@ -134,6 +136,8 @@ The FRP dashboard provides real-time information about connected clients and act
 
 ## Related Projects
 
+- [gonka](https://github.com/gonka-ai) - Main gonka project
+- [FRP](https://github.com/fatedier/frp) - Fast Reverse Proxy project used as the underlying technology
 - [gonka-mlnode-protected](https://github.com/OpenDOps/gonka-mlnode-protected) - MLNode image with integrated FRP client
 - [gonka-mlnode-public README](/Users/mac/Documents/development/MidHub/gonka/gonka-mlnode-public/README.md) - Detailed documentation on the MLNode side
 
